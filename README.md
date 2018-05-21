@@ -43,7 +43,7 @@
 
 # Output
 
-  1. pairwise directory: including all gene pairs sequence (fasta format).
+  1. pairwise directory: including all gene pair sequences (fasta format).
   2. PAML_result: including all codeml output files.
 
 # Visualization
