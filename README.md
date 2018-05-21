@@ -23,7 +23,7 @@
 
 
 # Others
-  Please read below literatures for basics on dS values caculation for WGD detectation:
+  Please read below literatures for basics on dS value caculation for WGD detectation:
     1.
     2.
     3.
