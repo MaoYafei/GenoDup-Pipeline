@@ -28,14 +28,14 @@
           PAPA
         ...
   3. Gene_family_file: it contains the gene family cluster (usually be produced by OrthoMCL).
-     
-     eg:
+    
+    eg:
         led1: gene1,gene2,gene3
         led2: gene3,gene4
         ...
   4. Gene_pair_file: it contains two Ohnologs in two colums separated by tab (could be produced by MCScanX or OrthoMCL or i-ADHoRe).
-     
-     eg:
+    
+    eg:
         gene1 gene2
         gene3 gene4
         ...
