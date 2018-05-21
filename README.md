@@ -18,4 +18,14 @@
 # Visualization
 
   Running Geno_Dup_Cal_plot.sh
+  
+# Citation
+
+
+# Others
+  Please read below literatures for basics on dS values caculation for WGD detectation:
+    1.
+    2.
+    3.
+    4.
 
