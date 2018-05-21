@@ -1,5 +1,5 @@
 # Genome-duplication-calculation
-  This python script can be used to detect Whole-genome duplication (WGD) in the dS based method.
+  This python script can be used to detect Whole-genome duplication (WGD) as the dS based method.
 
 # Run the program
   1. Caculate dS values based on gene family data (Paralogs dS values)
@@ -12,6 +12,7 @@
 
 # Input
   1. Nuclear_sequence_file: it contains all the nuclear sequences in your analysis (fasta format).
+    
     eg:
         >gene1
           ATCG
@@ -19,6 +20,7 @@
           ATCC
         ...
   2. Protein_sequence_file: it contains all the protein sequences in your analysis (fasta format).
+    
     eg:
         >gene1
           PAPA
@@ -26,11 +28,13 @@
           PAPA
         ...
   3. Gene_family_file: it contains the gene family cluster (usually be produced by OrthoMCL).
+     
      eg:
         led1: gene1,gene2,gene3
         led2: gene3,gene4
         ...
   4. Gene_pair_file: it contains two Ohnologs in two colums separated by tab (could be produced by MCScanX or OrthoMCL or i-ADHoRe).
+     
      eg:
         gene1 gene2
         gene3 gene4
