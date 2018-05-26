@@ -1,4 +1,4 @@
-# Genome-duplication-calculation
+# GenoDup Pipeline
   This python script can be used to detect Whole-genome duplication (WGD) as the dS based method.
 
 # Run the program
@@ -48,7 +48,7 @@
 
 # Visualization
 
-  Running Geno_Dup_Cal_plot.sh
+  Rscript plot_Genodup.r
   
 # Citation
 
