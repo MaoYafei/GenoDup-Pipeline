@@ -51,7 +51,7 @@
 
   Rscript plot_Genodup.r
   
-# Citation
+# Citations
      1. 
      2.Abascal, Federico, Rafael Zardoya, and Maximilian J. Telford. "TranslatorX: multiple alignment of nucleotide sequences guided by amino acid translations." Nucleic acids research 38.suppl_2 (2010): W7-W13.
      3.Katoh, Kazutaka, and Daron M. Standley. "MAFFT multiple sequence alignment software version 7: improvements in performance and usability." Molecular biology and evolution 30.4 (2013): 772-780.
