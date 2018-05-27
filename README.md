@@ -39,7 +39,7 @@
         gene1 gene2
         gene3 gene4
         ...
-  5. Maximum_number_of_gene_family: Maximum number of gene family which you want to analyze, only use with -g (suggest: 5-10)
+  5. Maximum_number_of_gene_family: Maximum number of gene family which you want to analyze, only use with -g (suggest: 5-15)
 
 # Output
 
