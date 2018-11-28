@@ -85,18 +85,18 @@ def pairwise_dS_Cal(Parameters):
 
         	os.system("mafft --localpair --maxiterate 1000 %s.aa > %s.aa.aln" % (file_name,file_name))
 		os.system("perl translatorx_vLocal.pl -i %s.del -a %s.aa.aln -o %s" %(file_name,file_name,file_name))
-		os.system('mv %s.nt_* aln_genefam' % (file_name))
+		os.system('mv %s.nt_* aln_genefam_anchor' % (file_name))
         	os.system("rm %s*" %(file_name))
 #		break
 	group_file.close()
 
 
-	L=os.listdir('aln_genefam')
+	L=os.listdir('aln_genefam_anchor')
 
 ####creat pairwise sequence for caculate dS###
 	os.system('rm -r  pairwise_anchor')
 	os.system('mkdir pairwise_anchor')
-	s='pairwise/'
+	s='pairwise_anchor/'
 
 	def get_seq(dic):
         	s=''
@@ -106,7 +106,7 @@ def pairwise_dS_Cal(Parameters):
 	for i in L:
         	print i
         	Ltem=[]
-        	for seq_record in SeqIO.parse('aln_genefam/'+i,'fasta'):
+        	for seq_record in SeqIO.parse('aln_genefam_anchor/'+i,'fasta'):
                 	dic={}
                 	dic[str(seq_record.id)]=str(seq_record.seq)
                 	Ltem.append(dic)
@@ -122,13 +122,13 @@ def pairwise_dS_Cal(Parameters):
 ###creat script to PAML####
 	os.system("rm -r PAML_result_anchor")
 	os.system("mkdir PAML_result_anchor")
-	L=os.listdir('pairwise/')
+	L=os.listdir('pairwise_anchor/')
 	for i in L:
 		file_name=i+'.ctl_cdm'
         	outfile=open(i+'.ctl_cdm','w')
         	outfile.write('seqfile = pairwise/'+i+'\noutfile = '+i+'.cdmrlt\nnoisy = 9\nverbose = 1\nrunmode = -2\nseqtype = 1\nCodonFreq = 2\nmodel = 0\nNSsites = 0\nicode = 0\nfix_kappa = 0\nkappa = 1\nfix_omega = 0\nomega = 0.5')
         	outfile.close()
 		os.system("codeml %s" % (file_name))
-		os.system("mv *cdmrlt PAML_result")
+		os.system("mv *cdmrlt PAML_result_anchor")
 		os.system("rm %s*" % (i))
 
