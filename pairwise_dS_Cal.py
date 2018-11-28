@@ -126,7 +126,7 @@ def pairwise_dS_Cal(Parameters):
 	for i in L:
 		file_name=i+'.ctl_cdm'
         	outfile=open(i+'.ctl_cdm','w')
-        	outfile.write('seqfile = pairwise/'+i+'\noutfile = '+i+'.cdmrlt\nnoisy = 9\nverbose = 1\nrunmode = -2\nseqtype = 1\nCodonFreq = 2\nmodel = 0\nNSsites = 0\nicode = 0\nfix_kappa = 0\nkappa = 1\nfix_omega = 0\nomega = 0.5')
+        	outfile.write('seqfile = pairwise_anchor/'+i+'\noutfile = '+i+'.cdmrlt\nnoisy = 9\nverbose = 1\nrunmode = -2\nseqtype = 1\nCodonFreq = 2\nmodel = 0\nNSsites = 0\nicode = 0\nfix_kappa = 0\nkappa = 1\nfix_omega = 0\nomega = 0.5')
         	outfile.close()
 		os.system("codeml %s" % (file_name))
 		os.system("mv *cdmrlt PAML_result_anchor")
