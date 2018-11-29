@@ -90,7 +90,7 @@ if pair_file=='':
 		from genefam_dS_Cal import *
 		Parameters=[group_file,pro_file,seq_file,max_genefam]
 		genefam_dS_Cal(Parameters)
-		os.system("grep 'dN/dS= ' PAML_result/led*cdmrlt |cut -f 7 -d '=' > dS_value.txt")
+		os.system("grep 'dN/dS= ' PAML_result_anchor/led*cdmrlt |cut -f 7 -d '=' > dS_value_anchor.txt")
 		sys.exit()
 if group_file=='':
 	from pairwise_dS_Cal import *
