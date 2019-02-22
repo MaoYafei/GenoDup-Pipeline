@@ -59,7 +59,7 @@
      
 
 # Others
-    Please read below literature for basic knowledge on dS value calculation for WGD inference:
+    Please read below literature for basic knowledge of dS value calculation for WGD inference:
       1.Vanneste, Kevin, et al. "Analysis of 41 plant genomes supports a wave of successful genome duplications in association with the Cretaceous–Paleogene boundary." Genome research 24.8 (2014): 1334-1347.
       2.Berthelot, Camille, et al. "The rainbow trout genome provides novel insights into evolution after whole-genome duplication in vertebrates." Nature communications 5 (2014): 3657.
       3.Vanneste, Kevin, Yves Van de Peer, and Steven Maere. "Inference of genome duplications from age distributions revisited." Molecular biology and evolution 30.1 (2012): 177-190.
